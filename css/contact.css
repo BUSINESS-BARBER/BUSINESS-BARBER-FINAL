@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap");
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------options-----------*/
+.row {
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* contact with map section */
+.contact-map{
+    width: 100%;
+    margin-top: 7%;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.contact-map h3{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 800;
+}
+.contact-map .map{
+    margin-top: 3%;
+    width: 80%;
+}
+
+
+/* CONTACT INFO DESIGNS */
+.contact-us{
+    width: 100%;
+    margin-top: 5%;
+}
+
+/* LEFT SIDE OF MY CONTACT INFORMATION */
+.left{
+    flex-basis: 50%;
+    margin: 2% 0 0 15%;
+
+}
+.left div{
+    display: flex;
+    margin-bottom: 5%;
+}
+.left div .fa-solid{
+    font-size: 30px;
+    color: #CE2A44;
+    margin-right: 5%;
+}
+.left div h3{
+    font-size: 18px;
+    margin-bottom: 5%;
+    color: #9C9C9C;
+    font-weight: 800;
+}
+.left div p{
+    color: #9C9C9C;
+    font-family: Poppins;
+}
+
+/* RIGHT SIDE OF MY CONTACT INFORMATION */
+.right{
+    flex-basis: 50%;
+    margin: 0 20% 2% 0;
+}
+.right input, .right textarea{
+    width: 100%;
+    padding: 15px;
+    margin-top: 17px;
+    color: #ccc;
+    border: 1px solid #ccc;
+}
+.right button{
+    margin-left: 17px;
+}
+
+.book-btn {
+    border-radius: 10px;
+    text-decoration: none;
+    letter-spacing: .2em;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    position: relative;
+    background: transparent;
+    border: 1px solid #ffffff;
+    margin-bottom: 5%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.book-btn:hover {
+    cursor: pointer;
+    color: black;
+    background: #FBB034;
+    border: 1px solid #ffffff;
+    transition: 1s ease;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .contact-map {
+    width: 100%;
+    height: 400px;
+    margin-top: 0%;
+  }
+  .contact-map h3 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .row {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us {
+    margin-top: 20%;
+  }
+  .left div .fa-solid {
+    font-size: 25px;
+  }
+  .left div {
+    margin-right: 15%;
+  }
+  .left div h3 {
+    font-size: 15px;
+    margin-bottom: 2%;
+  }
+  .left div p {
+    font-size: 12px;
+  }
+  .right {
+    flex-basis: 100%;
+    margin-left: 15%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .right input,
+  .right textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  .book-btn {
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 10px 15px;
+    margin-bottom: 10%;
+  }
+}

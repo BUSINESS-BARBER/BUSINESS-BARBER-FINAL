@@ -257,8 +257,17 @@
         cursor: pointer;
     }
 
+    .nav-panel .logo img{
+        display: unset;
+        margin-top: 10px;
+        margin-left: 15px;
+        height: 60px;
+        width: 150px;
+        cursor: pointer;
+    }
+
     .nav-panel .nav-links {
-        height: 50vh;
+        height: 200;
         position: fixed;
         top: 0;
         left: 0;
@@ -269,7 +278,6 @@
         align-items: center;
         display: none;
     }
-    
 
     .nav-panel .buttons {
         display: none;
@@ -290,6 +298,7 @@
         right: 20px;
         z-index: 101;
         display: none;
+        position: fixed;
     }
 
 }

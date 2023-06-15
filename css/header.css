@@ -230,7 +230,7 @@
 
     .nav-panel .logo img{
         display: unset;
-        margin-top: 10px;
+ 
         margin-left: 15px;
         height: 60px;
         width: 150px;
@@ -238,7 +238,9 @@
     }
 
     .nav-panel .nav-links {
-        height: 50vh;
+        margin-top: -1%;
+        margin-right: -5%;
+        height: 110%;
         position: fixed;
         top: 0;
         left: 0;
@@ -269,6 +271,7 @@
         right: 20px;
         z-index: 101;
         display: none;
+        position: fixed;
     }
 
 }
