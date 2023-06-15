@@ -1,46 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header(in).css">
-    <script src="https://kit.fontawesome.com/ae0bd0171a.js" crossorigin="anonymous"></script>
-    <title>MAIN PAGE</title>
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/SERVICES.css" />
+    <link rel="stylesheet" href="CSS/HEADER.CSS" />
+    <!-- FONTS IN MY SITE -->
+    <link rel="preconnect " href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS IN MY SITE -->
+    <script
+      src="https://kit.fontawesome.com/0084cc2fcc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>SERVICES PAGE</title>
+  </head>
+
+  <body>
+    <!-- TOP OF THE PAGE -->
     <nav class="nav-panel">
-        <div class="username">
-            <h1>Welcome! <span id="user-account"></span></h1>
-        </div>
-        <div class="triple-bar-menu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="nav-links">
-            <li class="home">
-                <a href="index(in).html" class="link" >Home</a>
-            </li>
-            <li class="about-us">
-                <a href="about(in).html" class="link">About</a>
-            </li>
-            <li class="services">
-                <a href="services(in).html" id="current" class="link">Services</a>
-            </li>
-            <li class="contact">
-                <a href="contact(in).html" class="link">Contact</a>
-            </li>
-        </ul>
-        <div class="buttons">
-            <a href="services.html" class="button">Logout</a>
-        </div>
-        <div class="close-menu">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-        
+      <div class="logo">
+        <img src="img/LOGO.png" alt="" />
+      </div>
+      <div class="triple-bar-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li class="home">
+          <a href="index(in).html"  class="link">Home</a>
+        </li>
+        <li class="about-us">
+          <a href="about(in).html" class="link">About</a>
+        </li>
+        <li class="services">
+          <a href="services(in).html" id="current" class="link">Services</a>
+        </li>
+        <li class="contact">
+          <a href="contact(in).html" class="link">Contact</a>
+        </li>
+      </ul>
+      <div class="buttons">
+        <a href="#" onclick="logout()" class="button" >Logout</a>
+      </div>
+      <div class="close-menu">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
     </nav>
 
-    
-    <script src="js/responsive.js"></script>
-    <!-- <script src="JS/getTheUser.js"></script> -->
-</body>
+    <section class="Services">
+      <div class="row">
+        <div class="services-column">
+          <img src="img/WEST.png" alt="USTP CAMPUS" />
+          <h2>WESTERN<br />STYLE</h2>
+          <div class="more-info">
+            <button class="book-btn more" id="open-btn">More</button>
+          </div>
+        </div>
+        <div class="services-column">
+          <img src="img/KOREAN.png" alt="COC CAMPUS" />
+          <h2>KOREAN<br />STYLE</h2>
+          <div class="more-info">
+            <button class="book-btn more" id="open-btn2">More</button>
+          </div>
+        </div>
+        <div class="services-column">
+          <img src="img/PINOY.png" alt="WEST CAMPUS" />
+          <h2>PINOY<br />STYLE</h2>
+          <div class="more-info">
+            <button class="book-btn more" id="open-btn3">More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popup1">
+      <button class="close-btn" id="close-btn">&times;</button>
+      <!-- FIRST ROW -->
+      <div class="row">
+        <div class="services-column col2">
+          <img
+            src="images/Conventional Hipster.jpg"
+            alt="Conventional Hipster"
+          />
+          <h1>Conventional Hipster</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/Antiquated Style.jpg" alt="Antiquated Style" />
+          <h1>Antiquated Style</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/Dumpy Spikes.jpg" alt="Dumpy Spikes" />
+          <h1>Dumpy Spikes</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/Semi Bald.jpg" alt="Semi Bald" />
+          <h1>Semi Bald</h1>
+        </div>
+      </div>
+      <!-- SECOND ROW -->
+      <div class="row">
+        <div class="services-column col2">
+          <img src="images/Pompadour.jpg" alt="Pompadour" />
+          <h1>Pompadour</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/Shaggy Blonde.jpg" alt="Shaggy Blonde" />
+          <h1>Shaggy Blonde</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/Long Dread.jpg" alt="Long Dread" />
+          <h1>Long Dread</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/Pushed Up Front.jpg" alt="Pushed Up Front" />
+          <h1>Pushed Up Front</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="popup2">
+      <button class="close-btn" id="close-btn2">&times;</button>
+      <!-- FIRST ROW -->
+      <div class="row">
+        <div class="services-column col2">
+          <img src="images/Two-Block Korean.jpg" alt="Two-Block Korean" />
+          <h1>Two-Block Korean</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/Curtains Fringe.jpg" alt="Curtains Fringe" />
+          <h1>Curtains Fringe</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/Permed Mullet.jpg" alt="Permed Mullet" />
+          <h1>Permed Mullet</h1>
+        </div>
+        <div class="services-column col2">
+          <img
+            src="images/Shaggy Korean Hairstyle.jpg"
+            alt="Shaggy Korean Hairstyle"
+          />
+          <h1>Shaggy Korean</h1>
+        </div>
+      </div>
+      <!-- SECOND ROW -->
+      <div class="row">
+        <div class="services-column col2">
+          <img
+            src="images/Mullet Korean Hairstyle Men.jpg"
+            alt="Mullet Korean Hairstyle Men"
+          />
+          <h1>Mullet Korean</h1>
+        </div>
+        <div class="services-column col2">
+          <img
+            src="images/Slicked Back With Side Part.jpg"
+            alt="Slicked Back With Side Part"
+          />
+          <h1>Slicked Back</h1>
+        </div>
+        <div class="services-column col2">
+          <img
+            src="images/Disconnected Undercut And Brushed Back Top.jpg"
+            alt="Disconnected Undercut And Brushed Back Topd"
+          />
+          <h1>Undercut</h1>
+        </div>
+        <div class="services-column col2">
+          <img
+            src="images/The Medium And Layered.jpg"
+            alt="The Medium And Layered"
+          />
+          <h1>The Medium And Layered</h1>
+        </div>
+      </div>
+    </section>
+    <section class="popup3">
+      <button class="close-btn" id="close-btn3">&times;</button>
+      <!-- FIRST ROW -->
+      <div class="row">
+        <div class="services-column col2">
+          <img src="images/PANDAY.jpg" alt="Panday" />
+          <h1>Panday Hair</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/LONG BAD.jpg" alt="BADBOY" />
+          <h1>LONG BAD HAIR</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/MISTAH.jpg" alt="MISTAH" />
+          <h1>MISTAH HAIR</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/GOYO.jpg" alt="GOYO" />
+          <h1>GOYO</h1>
+        </div>
+      </div>
+      <!-- SECOND ROW -->
+      <div class="row">
+        <div class="services-column col2">
+          <img src="images/RIZZ HAIR.jfif" alt="RIZZ" />
+          <h1>RIZAL</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/CARDO.jfif" alt="CARDO" />
+          <h1>LIP HAIR</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/KAGIS.jfif" alt="KAGIS" />
+          <h1>KAGIS</h1>
+        </div>
+        <div class="services-column col2">
+          <img src="images/VOLTES FIVE.jfif" alt="VOLTES" />
+          <h1>VOLTES FIVE</h1>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="JS/services.js"></script>
+  <script src="JS/getTheUser.js"></script>
 </html>

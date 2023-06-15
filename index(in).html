@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header(in).css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://kit.fontawesome.com/ae0bd0171a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/ae0bd0171a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>MAIN PAGE</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="nav-panel">
-        <div class="username">
-            <h1>Welcome! <span id="user-account"></span></h1>
-        </div>
-        <div class="triple-bar-menu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="nav-links">
-            <li class="home">
-                <a href="index(in).html" id="current" class="link" >Home</a>
-            </li>
-            <li class="about-us">
-                <a href="about(in).html" class="link">About</a>
-            </li>
-            <li class="services">
-                <a href="services(in).html" class="link">Services</a>
-            </li>
-            <li class="contact">
-                <a href="contact(in).html" class="link">Contact</a>
-            </li>
-        </ul>
-        <div class="buttons">
-            <a href="index.html" class="button">Logout</a>
-        </div>
-        <div class="close-menu">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
+      <div class="logo">
+        <img src="img/LOGO.png" alt="" />
+      </div>
+      <div class="triple-bar-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li class="home">
+          <a href="index(in).html" id="current" class="link">Home</a>
+        </li>
+        <li class="about-us">
+          <a href="about(in).html" class="link">About</a>
+        </li>
+        <li class="services">
+          <a href="services(in).html" class="link">Services</a>
+        </li>
+        <li class="contact">
+          <a href="contact(in).html" class="link">Contact</a>
+        </li>
+      </ul>
+      <div class="buttons">
+       <a href="#" onclick="logout()" class="button" >Logout</a>
+      </div>
+      <div class="close-menu">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
     </nav>
 
     <section class="info">
-        <div class="information">
-            <h4>Welcome to Khen & Kent</h4>
-            <h1>Best Hair Salon For A <br> <span>Professional Look</span></h1>
-            <h3>Khen & Kent offers high performance <br>customized facials to provide you <br>with visible results.</h3>
-        </div>
-    
-        <div class="buttonsMenu">
-            <a class="bookNOW-btn" href="contact.html">Book Now</a>
-            <a class="gallery-btn" href="https://drive.google.com/drive/u/1/folders/1zh_cai5YTw43W_M62W_U9XAdRVbdPmv6">Gallery</a>
-        </div>
-      </section>
+      <div class="information">
+        <h4>Welcome to Khen & Kent</h4>
+        <h1>
+          Best Hair Salon For A <br />
+          <span>Professional Look</span>
+        </h1>
+        <h3>
+          Khen & Kent offers high performance <br />customized facials to
+          provide you <br />with visible results.
+        </h3>
+      </div>
 
-    
-    <script src="index.js"></script>
-    <!-- <script src="JS/getTheUser.js"></script> -->
-</body>
+      <div class="buttonsMenu">
+        <a class="bookNOW-btn" href="contact.html">Book Now</a>
+        <a
+          class="gallery-btn"
+          href="https://drive.google.com/drive/u/1/folders/1zh_cai5YTw43W_M62W_U9XAdRVbdPmv6"
+          >Gallery</a
+        >
+      </div>
+    </section>
+
+    <section class="barberPICTURE">
+      <div class="barberPIC">
+        <img class="barber" src="img/barber.png" alt="" />
+      </div>
+    </section>
+    <script src="JS/getTheUser.js"></script>
+    <script src="js/responsive.js"></script>
+  </body>
+  <script src=""></script>
 </html>

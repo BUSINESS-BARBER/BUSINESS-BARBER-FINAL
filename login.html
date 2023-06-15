@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+        <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+        <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/0084cc2fcc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <title>LOG-IN</title>
+</head>
+<body>
+    <section class="container-signin">
+        <form action="#" class="form" id='signin'>
+            <i class="uil uil-times close-button"></i>
+            <h2 class="heading">
+                Login
+            </h2>
+            <span></span>
+
+            <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <small id="usernameError"></small>
+
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <i class="fa-solid fa-eye" id="eye-icon1"></i>
+            </div>
+            <small id="passwordError"></small>
+            
+            <div class="btn-field">
+                <button class="btn" type="submit" id="login-button">Login</button>
+                <p>Don't have an account? <a href="signup.html" class="signUpBtn-link">Sign Up</a></p>
+            </div>
+            
+
+        </form>
+    </section>
+    <script src="js/sign-in.js"></script>
+</body>
+</html>

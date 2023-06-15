@@ -11,6 +11,6 @@ tripleBarMenu.addEventListener('click', function() {
 });
 
 closeMenu.addEventListener('click', function() {
-    links.style.top = '-100%';
+    links.style.top = '-110%';
     closeMenu.style.display = 'none';
 });
