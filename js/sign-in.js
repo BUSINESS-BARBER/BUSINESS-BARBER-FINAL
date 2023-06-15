@@ -17,6 +17,10 @@ if (loginForm) {
     const getPassword = localStorage.getItem("password");
 
     if (usernameValue === getUsername && passwordValue === getPassword) {
+      message.innerText = "Successfully Login";
+      message.classList.add("succss");
+      username.style.border = "2px solid red";
+      password.style.border = "2px solid red";
       location.replace("index(in).html");
     } else if (usernameValue === "" || passwordValue === "") {
       message.innerText = "Username and Password are required.";
