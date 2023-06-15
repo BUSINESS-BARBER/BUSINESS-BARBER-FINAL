@@ -68,7 +68,7 @@ if (signupForm) {
     } else {
       localStorage.setItem("password", passwordValue);
       passwordError.innerText = "";
-      password.style.border = "2px solid green";
+      password.style.border = "2px solid yellow";
     }
     const getUsername = localStorage.getItem("username");
     const getEmail = localStorage.getItem("email");

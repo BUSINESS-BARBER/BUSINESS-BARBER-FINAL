@@ -17,11 +17,18 @@ if (loginForm) {
     const getPassword = localStorage.getItem("password");
 
     if (usernameValue === getUsername && passwordValue === getPassword) {
+<<<<<<< HEAD
       username.style.border = "2px solid green";
       password.style.border = "2px solid green";
       message.innerText = "Successfully Login!.";
       message.classList.remove("error-message");
       message.classList.add("success-message");
+=======
+      message.innerText = "Successfully Login";
+      message.classList.add("succss");
+      username.style.border = "2px solid red";
+      password.style.border = "2px solid red";
+>>>>>>> e868a7bcafd2f335f1b8b1ba453660f5ce47f97c
       location.replace("index(in).html");
     } else if (usernameValue === "" || passwordValue === "") {
       message.innerText = "Username and Password are required.";
