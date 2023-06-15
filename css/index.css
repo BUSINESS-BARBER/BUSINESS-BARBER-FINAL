@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap");
+
+/*<-----------Settings for all---------->*/
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+-----for left side information---------->*/
+.info {
+    margin-left: 1%;
+    margin-top: 10%;
+}
+
+.info .information {
+    margin-left: 7%;
+    margin-top: 6%;
+    width: 550px;
+}
+
+.information h1 {
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.information h1 span {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.information h3 {
+    font-size: 18px;
+    color: #9A9A9A;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.information h4 {
+    font-size: 15px;
+    color: #FBB034;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+/*<-----------for left side buttons---------->*/
+
+.buttonsMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 7%;
+    width: 550px;
+}
+
+.buttonsMenu .bookNOW-btn {
+    font-size: 17px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: .2em;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 12%;
+    margin-top: 3%;
+}
+
+.buttonsMenu .bookNOW-btn:hover {
+    cursor: pointer;
+    color: black;
+    background: #FBB034;
+    border: 1px solid #ffffff;
+    transition: 1s ease;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+.buttonsMenu .gallery-btn {
+    font-size: 17px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: .2em;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 23%;
+    margin-top: 3%;
+}
+
+.buttonsMenu .gallery-btn:hover {
+    cursor: pointer;
+    color: black;
+    background: #FFFFFF;
+    border: 1px solid #ffffff;
+    transition: 1s ease;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+/*<-----------for right side hovering picture---------->*/
+.barberPICTURE {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.barberPICTURE img {
+    position: absolute;
+    height: 140%;
+    left: 45%;
+    transform: translate(-50%);
+    bottom: 0;
+    transition: 2s ease;
+}
+
+.barberPICTURE .barberPIC:hover .barber {
+    left: 50%;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1360px) {
+    .info .information {
+        width: 550px;
+    }
+    
+    .information h1 {
+        font-size: 45px;
+        color: #FFFFFF;
+    }
+
+    .information h3 {
+        font-size: 17px;
+    }
+    
+    .information h4 {
+        font-size: 14px;
+    }
+
+    .buttonsMenu {
+        width: 530px;
+    }
+    
+    .buttonsMenu .bookNOW-btn {
+        padding: 11px 23px;
+        font-size: 16px;
+        margin-left: 11%;
+    }
+
+    .buttonsMenu .gallery-btn {
+        padding: 11px 23px;
+        font-size: 16px;
+        margin-left: 22%;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .info .information {
+        width: 500px;
+    }
+    
+    .information h1 {
+        font-size: 40px;
+        color: #FFFFFF;
+    }
+
+    .information h3 {
+        font-size: 16px;
+    }
+    
+    .information h4 {
+        font-size: 13px;
+    }
+
+    .buttonsMenu {
+        width: 510px;
+    }
+    
+    .buttonsMenu .bookNOW-btn {
+        padding: 10px 22px;
+        font-size: 15px;
+        margin-left: 10%;
+    }
+
+    .buttonsMenu .gallery-btn {
+        padding: 10px 22px;
+        font-size: 15px;
+        margin-left: 21%;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .info .information {
+        width: 450px;
+    }
+    
+    .information h1 {
+        font-size: 35px;
+        color: #FFFFFF;
+    }
+
+    .information h3 {
+        font-size: 15px;
+    }
+    
+    .information h4 {
+        font-size: 12px;
+    }
+
+    .buttonsMenu {
+        width: 490px;
+    }
+    
+    .buttonsMenu .bookNOW-btn {
+        padding: 9px 21px;
+        font-size: 14px;
+        margin-left: 9%;
+    }
+
+    .buttonsMenu .gallery-btn {
+        padding: 9px 21px;
+        font-size: 14px;
+        margin-left: 20%;
+    }
+
+    .barberPICTURE {
+        display: none;
+    }
+    
+    .barberPICTURE img {
+        display: none;
+    }
+}
+
+@media (max-width: 875px) {
+    .info .information {
+        width: 400px;
+    }
+    
+    .information h1 {
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+
+    .information h3 {
+        font-size: 14px;
+    }
+    
+    .information h4 {
+        font-size: 11px;
+    }
+
+    .buttonsMenu {
+        width: 470px;
+    }
+    
+    .buttonsMenu .bookNOW-btn {
+        padding: 8px 20px;
+        font-size: 13px;
+        margin-left: 8%;
+    }
+
+    .buttonsMenu .gallery-btn {
+        padding: 8px 20px;
+        font-size: 13px;
+        margin-left: 19%;
+    }
+}
+
+@media (max-width: 600px) {
+    .info .information {
+        width: 350px;
+    }
+    
+    .information h1 {
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    .information h3 {
+        font-size: 12px;
+    }
+    
+    .information h4 {
+        font-size: 9px;
+    }
+
+    .buttonsMenu {
+        width: 430px;
+    }
+    
+    .buttonsMenu .bookNOW-btn {
+        padding: 6px 18px;
+        font-size: 11px;
+        margin-left: 6%;
+    }
+
+    .buttonsMenu .gallery-btn {
+        padding: 6px 18px;
+        font-size: 11px;
+        margin-left: 17%;
+    }
+}
+
+
+

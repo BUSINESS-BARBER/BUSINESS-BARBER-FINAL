@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap");
+
+/*<-----------Settings for all---------->*/
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.png");
+    background-size: cover;
+}
+
+
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+    .nav-panel {
+        background-color: transparent;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 50;
+    }
+
+            .username #user-account {
+                margin-top: 10px;
+                margin-left: 40px;
+                text-decoration: none;
+                letter-spacing: .2em;
+                color: #FFFFFF;
+                padding: 12px 24px;
+                position: relative;
+                background: transparent;
+                cursor: pointer;
+                font-size: 20px;
+                margin-right: 50px;
+                font-weight: bold;
+            }
+            
+            .username h1 {
+                margin-top: 10px;
+                margin-left: 40%;
+                color: white;
+                font-size: 15px;
+            }
+
+            .nav-panel .nav-links {
+                margin-top: 30px;
+                margin-left: 120px;
+                list-style: none;
+                display: flex;
+            }
+
+            .nav-panel .nav-links .link {
+                text-decoration: none;
+                margin-right: 120px;
+                color: #FFFFFF;
+            }
+
+            .nav-panel .nav-links .link:hover {
+                color: #FBB034;
+                transition: 1s ease;
+            }
+
+            .nav-panel .nav-links .link#current {
+                color: #FBB034;
+            }
+
+
+        .nav-panel .buttons {
+            margin-top: 30px;
+        }
+
+        .nav-panel .buttons .button{
+            text-decoration: none;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            margin-right: 190px;
+            padding: 10px 15px 10px 15px;
+            background: transparent;
+            color: #FFFFFF;
+            letter-spacing: .1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .nav-panel .buttons .button:hover{
+            cursor: pointer;
+            color: black;
+            background: #FBB034;
+            border: 1px solid #ffffff;
+            transition: 1s ease;
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+        }
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 2000px) {
+
+    .triple-bar-menu {
+        display: none;
+    }
+
+    .close-menu {
+        display: none;
+    }    
+}
+
+@media (max-width: 1360px) {
+
+    .username #user-account {
+        margin-left: 35px;
+        font-size: 19px;
+        margin-right: 45px;
+    }
+
+    .username h1 {
+        font-size: 14px;
+    }
+
+    .nav-panel .nav-links {
+        margin-left: 100px;
+    }
+
+    .nav-panel .nav-links .link {
+        margin-right: 110px;
+        font-size: 15px;
+    }
+
+    .nav-panel .buttons .button{
+        font-size: 15px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .username #user-account {
+        margin-left: 30px;
+        font-size: 18px;
+        margin-right: 40px;
+    }
+
+    .username h1 {
+        font-size: 13px;
+    }
+
+    .nav-panel .nav-links {
+        margin-left: 80px;
+    }
+
+    .nav-panel .nav-links .link {
+        margin-right: 100px;
+        font-size: 15px;
+    }
+
+    .nav-panel .buttons .button{
+        font-size: 15px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1180px) {
+
+    .username #user-account {
+        margin-left: 30px;
+        font-size: 18px;
+        margin-right: 40px;
+    }
+
+    .username h1 {
+        font-size: 12px;
+    }
+
+    .nav-panel .nav-links {
+        margin-left: 70px;
+    }
+
+    .nav-panel .nav-links .link {
+        margin-right: 70px;
+        font-size: 13px;
+    }
+
+    .nav-panel .buttons .button{
+        font-size: 13px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .nav-panel .nav-links {
+        margin-left: 50px;
+    }
+
+    .nav-panel .nav-links .link {
+        margin-right: 50px;
+        font-size: 12px;
+    }
+
+    .nav-panel .buttons .button{
+        font-size: 12px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 875px) {
+
+    .nav-panel .nav-links {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .nav-panel .nav-links .link {
+        margin-right: 30px;
+        font-size: 11px;
+    }
+
+    .nav-panel .buttons .button{
+        font-size: 9px;
+        margin-right: 15px;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+@media (max-width: 875px) {
+
+    .username #user-account {
+        display: none;
+    }
+
+    .username h1 {
+        display: none;
+    }
+
+    .nav-panel .buttons {
+        margin-right: 40px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .nav-panel .triple-bar-menu i {
+        margin-top: 35px;
+        margin-right: 40px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .nav-panel .nav-links {
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    
+
+    .nav-panel .buttons {
+        display: none;
+    }
+
+    .triple-bar-menu {
+        margin-right: 30px;
+        display: block;
+    }
+
+    .close-menu {
+        color: #FFFFFF;
+        cursor: pointer;
+        display: unset;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 101;
+        display: none;
+    }
+
+}
+
+
+
+
+
