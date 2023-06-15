@@ -7,17 +7,10 @@
     <!-- FONTS IN MY SITE -->
     <link rel="preconnect " href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- ICONS IN MY SITE -->
-    <script
-      src="https://kit.fontawesome.com/0084cc2fcc.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/ae0bd0171a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <title>CONTACT PAGE</title>
 </head>
 
@@ -45,8 +38,8 @@
             </li>
         </ul>
         <div class="buttons">
-            <a href="login.html" class="button">Login</a>
-            <a href="signup.html" class="button">Signup</a>
+            <a class="button" id="login-button" >Login</a>
+            <a class="button" id="signup-botton">Signup</a>
         </div>
         <div class="close-menu">
             <i class="fa-solid fa-xmark"></i>
@@ -101,17 +94,17 @@
       <!-- RIGHT SIDE OF THE CONTACT INFORMATION -->
       <div class="right">
         <form>
-          <input type="text" name="name" placeholder="Enter Your Name" required disabled> 
-          <input type="email" name="email" placeholder="Enter Email Address" required disabled>
-          <input type="text" name="subject" placeholder="Enter Your Subject" required disabled>
-          <textarea rows="8" name="message" placeholder="Message" required disabled></textarea>
-          <button class="book-btn">Send Now</button>
+          <input type="text" name="name" placeholder="Login First" required disabled> 
+          <input type="email" name="email" placeholder="Login First" required disabled>
+          <input type="text" name="subject" placeholder="Login First" required disabled>
+          <textarea rows="8" name="message" placeholder="Login First" required disabled></textarea>
+          <button class="book-btn" disabled>Send Now</button>
         </form>
       </div>
       
   </section>
 
   <script src="js/responsive.js"></script>
-
+  <script src="js/index-to-login.js"></script>
 </body>
 </html>
