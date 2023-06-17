@@ -51,11 +51,13 @@
 
             .nav-panel .nav-links .link:hover {
                 color: #FBB034;
+                font-size: bold;
                 transition: 1s ease;
             }
 
             .nav-panel .nav-links .link#current {
                 color: #FBB034;
+                font-size: bold;
             }
 
 

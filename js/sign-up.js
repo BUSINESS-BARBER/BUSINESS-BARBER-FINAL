@@ -37,7 +37,7 @@ if (signupForm) {
     } else {
       localStorage.setItem("username", usernameValue);
       usernameError.innerText = "";
-      username.style.border = "2px solid yellow";
+      username.style.border = "3px solid green";
     }
 
     // email validation & save
@@ -52,7 +52,7 @@ if (signupForm) {
     } else {
       localStorage.setItem("email", emailValue);
       emailError.innerText = "";
-      email.style.border = "2px solid yellow";
+      email.style.border = "3px solid green";
     }
 
     // password validation & save

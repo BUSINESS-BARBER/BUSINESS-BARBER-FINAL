@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
     <script src="https://kit.fontawesome.com/ae0bd0171a.js" crossorigin="anonymous"></script>
-    <title>MAIN PAGE</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <title>ABOUT PAGE</title>
 </head>
 <body>
     <nav class="nav-panel">
@@ -32,8 +33,8 @@
             </li>
         </ul>
         <div class="buttons">
-            <a href="login.html" class="button">Login</a>
-            <a href="signup.html" class="button">Signup</a>
+            <a class="button" id="login-button" >Login</a>
+            <a class="button" id="signup-botton">Signup</a>
         </div>
         <div class="close-menu">
             <i class="fa-solid fa-xmark"></i>
@@ -111,9 +112,9 @@
         </div>
         <div class="comments">
           <div id="comment-form">
-            <input type="text" id="name-input" placeholder="Enter Your Name" >
-            <textarea id="comment-input" placeholder="Add a comment" ></textarea>
-            <button id="comment-submit" >Submit</button>
+            <input type="text" id="name-input" placeholder="Enter Your Name" disabled>
+            <textarea id="comment-input" placeholder="Add a comment" disabled></textarea>
+            <button id="comment-submit" disabled>Submit</button>
           </div>
           <div class="comment-list">
             <!-- Comment elements will be added here -->
@@ -142,5 +143,6 @@
       </section>
     
     <script src="js/responsive.js"></script>
+    <script src="js/index-to-login.js"></script>
 </body>
 </html>
