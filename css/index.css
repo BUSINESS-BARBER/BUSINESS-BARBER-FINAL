@@ -9,6 +9,8 @@
 }
 
 body {
+    background-image: url("index_background.gif");
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     justify-content: flex-start;
@@ -22,123 +24,100 @@ body {
     margin-top: 10%;
 }
 
-.info .information {
-    margin-left: 7%;
-    margin-top: 6%;
-    width: 550px;
-}
+    .info .information {
+        margin-left: 7%;
+        margin-top: 6%;
+        width: 550px;
+    }
 
-.information h1 {
-    font-size: 50px;
-    color: #FFFFFF;
-}
+    .information h1 {
+        font-size: 50px;
+        color: #FFFFFF;
+    }
 
-.information h1 span {
-    animation: fadeIn 5s;
-}
+    .information h1 span {
+        animation: fadeIn 5s;
+    }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 
-.information h3 {
-    font-size: 18px;
-    color: #9A9A9A;
-    letter-spacing: 1px;
-    line-height: 24px;
-}
+    .information h3 {
+        font-size: 18px;
+        color: #9A9A9A;
+        letter-spacing: 1px;
+        line-height: 24px;
+    }
 
-.information h4 {
-    font-size: 15px;
-    color: #FBB034;
-    letter-spacing: 1px;
-    line-height: 24px;
-}
+    .information h4 {
+        font-size: 15px;
+        color: #FBB034;
+        letter-spacing: 1px;
+        line-height: 24px;
+    }
 
 /*<-----------for left side buttons---------->*/
 
-.buttonsMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 7%;
-    width: 550px;
-}
+    .buttonsMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 7%;
+        width: 550px;
+    }
 
-.buttonsMenu .bookNOW-btn {
-    font-size: 17px;
-    border-radius: 5px;
-    text-decoration: none;
-    letter-spacing: .2em;
-    color: #FFFFFF;
-    padding: 12px 24px;
-    background: transparent;
-    border: 1px solid #fff;
-    cursor: pointer;
-    font-weight: bold;
-    margin-left: 12%;
-    margin-top: 3%;
-}
+    .buttonsMenu .bookNOW-btn {
+        font-size: 17px;
+        border-radius: 5px;
+        text-decoration: none;
+        letter-spacing: .2em;
+        color: #FFFFFF;
+        padding: 12px 24px;
+        background: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 12%;
+        margin-top: 3%;
+    }
 
-.buttonsMenu .bookNOW-btn:hover {
-    cursor: pointer;
-    color: black;
-    background: #FBB034;
-    border: 1px solid #ffffff;
-    transition: 1s ease;
-    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
-}
+    .buttonsMenu .bookNOW-btn:hover {
+        cursor: pointer;
+        color: black;
+        background: #FBB034;
+        border: 1px solid #ffffff;
+        transition: 1s ease;
+        box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+    }
 
-.buttonsMenu .gallery-btn {
-    font-size: 17px;
-    border-radius: 5px;
-    text-decoration: none;
-    letter-spacing: .2em;
-    color: #FFFFFF;
-    padding: 12px 24px;
-    background: transparent;
-    border: 1px solid #fff;
-    cursor: pointer;
-    font-weight: bold;
-    margin-left: 23%;
-    margin-top: 3%;
-}
+    .buttonsMenu .gallery-btn {
+        font-size: 17px;
+        border-radius: 5px;
+        text-decoration: none;
+        letter-spacing: .2em;
+        color: #FFFFFF;
+        padding: 12px 24px;
+        background: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 23%;
+        margin-top: 3%;
+    }
 
-.buttonsMenu .gallery-btn:hover {
-    cursor: pointer;
-    color: black;
-    background: #FFFFFF;
-    border: 1px solid #ffffff;
-    transition: 1s ease;
-    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
-}
+    .buttonsMenu .gallery-btn:hover {
+        cursor: pointer;
+        color: black;
+        background: #FFFFFF;
+        border: 1px solid #ffffff;
+        transition: 1s ease;
+        box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+    }
 
-/*<-----------for right side hovering picture---------->*/
-.barberPICTURE {
-    width: 30%;
-    height: 50%;
-    position: absolute;
-    right: 80px;
-    bottom: 0;
-    z-index: 1;
-}
-
-.barberPICTURE img {
-    position: absolute;
-    height: 140%;
-    left: 45%;
-    transform: translate(-50%);
-    bottom: 0;
-    transition: 2s ease;
-}
-
-.barberPICTURE .barberPIC:hover .barber {
-    left: 50%;
-}
 
 /*RESPONSIVE*/
-
 @media (max-width: 1360px) {
     .info .information {
         width: 550px;
@@ -243,14 +222,6 @@ body {
         padding: 9px 21px;
         font-size: 14px;
         margin-left: 20%;
-    }
-
-    .barberPICTURE {
-        display: none;
-    }
-    
-    .barberPICTURE img {
-        display: none;
     }
 }
 

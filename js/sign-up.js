@@ -29,11 +29,11 @@ if (signupForm) {
     if (usernameValue === "") {
       usernameError.innerText = "Username is required.";
       usernameError.classList.add("error");
-      username.style.border = "2px solid red";
+      username.style.border = "3px solid red";
     } else if (usernameValue.length < min) {
       usernameError.innerText = "Minimum length required is 2.";
       usernameError.classList.add("error");
-      username.style.border = "2px solid red";
+      username.style.border = "3px solid red";
     } else {
       localStorage.setItem("username", usernameValue);
       usernameError.innerText = "";
@@ -44,11 +44,11 @@ if (signupForm) {
     if (emailValue === "") {
       emailError.innerText = "Email Address is required.";
       emailError.classList.add("error");
-      email.style.border = "2px solid red";
+      email.style.border = "3px solid red";
     } else if (!validEmail(emailValue)) {
       emailError.innerText = "Email Address is not valid.";
       emailError.classList.add("error");
-      email.style.border = "2px solid red";
+      email.style.border = "3px solid red";
     } else {
       localStorage.setItem("email", emailValue);
       emailError.innerText = "";
@@ -59,16 +59,16 @@ if (signupForm) {
     if (passwordValue === "") {
       passwordError.innerText = "Password is required.";
       passwordError.classList.add("error");
-      password.style.border = "2px solid red";
+      password.style.border = "3px solid red";
     } else if (!validPassword(passwordValue)) {
       passwordError.innerText =
         "Minimum length required is 8, at least one letter, one number, and one special character.";
       passwordError.classList.add("error");
-      password.style.border = "2px solid red";
+      password.style.border = "3px solid red";
     } else {
       localStorage.setItem("password", passwordValue);
       passwordError.innerText = "";
-      password.style.border = "2px solid yellow";
+      password.style.border = "3px solid green";
     }
     const getUsername = localStorage.getItem("username");
     const getEmail = localStorage.getItem("email");
