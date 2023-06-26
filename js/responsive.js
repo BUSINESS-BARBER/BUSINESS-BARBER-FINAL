@@ -11,10 +11,12 @@ tripleBarMenu.addEventListener('click', function() {
     closeMenu.style.display = 'absolute';
     closeMenu.style.top = '30px';
     button.style.display = 'unset';
+    button.style.marginTop = '100px';
 });
 
 closeMenu.addEventListener('click', function() {
     links.style.top = '-130%';
     closeMenu.style.display = 'none';
     button.style.display = 'none';
+    button.style.marginTop = '30px';
 });
