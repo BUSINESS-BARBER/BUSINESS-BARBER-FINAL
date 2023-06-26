@@ -5,6 +5,7 @@ const closeMenu = document.querySelector('.close-menu');
 tripleBarMenu.addEventListener('click', function() {
     links.style.display = 'flex';
     links.style.top = '-10px';
+    links.style.backgroundImage = "url('css/background.png')";
     closeMenu.style.display = 'unset';
     closeMenu.style.display = 'absolute';
     closeMenu.style.top = '10px';
