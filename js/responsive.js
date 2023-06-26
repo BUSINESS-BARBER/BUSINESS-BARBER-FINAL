@@ -20,3 +20,40 @@ closeMenu.addEventListener('click', function() {
     button.style.display = 'none';
     button.style.marginTop = '30px';
 });
+
+
+
+
+
+
+
+
+
+window.addEventListener('resize', function() {
+    const buttons = document.getElementsByClassName('buttons');
+
+    function deactivateNavButtons() {
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].style.display = 'none';
+        }
+    }
+
+    function activateNavButtons() {
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].style.display = 'unset';
+            buttons[i].style.marginTop = '30px';
+        }
+    }
+    
+    const mediaQuery600 = window.matchMedia("(max-width: 600px)");
+    const mediaQuery875 = window.matchMedia("(max-width: 875px)");
+    const mediaQuery2000 = window.matchMedia("(max-width: 2000px)");
+
+    if (mediaQuery600.matches) {
+        deactivateNavButtons();
+    } else if (mediaQuery875.matches) {
+        activateNavButtons();
+    } else if (mediaQuery2000.matches) {
+        activateNavButtons();
+    }
+});
