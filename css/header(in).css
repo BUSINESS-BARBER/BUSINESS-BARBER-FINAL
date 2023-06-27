@@ -38,7 +38,7 @@ body {
                 font-size: 20px;
                 margin-right: 50px;
                 font-weight: bold;
-                animation: fadeIn 5s;
+                animation: fadeIn 3s ease;
             }
 
             @keyframes fadeIn {
@@ -51,6 +51,7 @@ body {
                 margin-left: 40%;
                 color: white;
                 font-size: 15px;
+                animation: fadeIn 3s ease;
             }
 
             .nav-panel .nav-links {
