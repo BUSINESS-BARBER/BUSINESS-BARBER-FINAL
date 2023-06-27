@@ -282,9 +282,9 @@ body {
     }
 
     .nav-panel .nav-links {
-        margin-top: -1%;
+        margin-top: -20%;
         margin-right: -5%;
-        height: 110%;
+        height: 130%;
         position: fixed;
         top: 0;
         left: 0;
@@ -294,10 +294,12 @@ body {
         justify-content: center;
         align-items: center;
         display: none;
+        font-size: 30px;
     }
 
     .nav-panel .buttons {
         display: none;
+        z-index: 101;
     }
 
     .triple-bar-menu {
@@ -311,8 +313,7 @@ body {
         display: unset;
         display: block;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        right: 70px;
         z-index: 101;
         display: none;
         position: fixed;
